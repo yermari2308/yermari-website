@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Yermari — Construyendo con propósito</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css" rel="stylesheet"/>
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -508,273 +508,257 @@ footer {
 </style>
 </head>
 <body>
-
 <div id="progress"></div>
-
 <nav class="nav" id="nav">
-  <a href="#inicio" class="logo">YERMAR<em>I</em></a>
-  <ul class="nav-links">
-    <li><a href="#sobre">Sobre mí</a></li>
-    <li><a href="#trayectoria">Trayectoria</a></li>
-    <li><a href="#proyectos">Proyectos</a></li>
-    <li><a href="#blog">Blog</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-  </ul>
+<a class="logo" href="#inicio">YERMAR<em>I</em></a>
+<ul class="nav-links">
+<li><a href="#sobre">Sobre mí</a></li>
+<li><a href="#trayectoria">Trayectoria</a></li>
+<li><a href="#proyectos">Proyectos</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
 </nav>
-
 <!-- HERO -->
 <div class="hero" id="inicio">
-  <div class="hero-main" id="hero-main">
-    <div class="hero-kicker">Costa Rica · Liderazgo · Propósito</div>
-    <h1 class="hero-h1">Construyendo mi<br>camino con <em>propósito</em><br>y determinación.</h1>
-    <p class="hero-sub">Compartiendo experiencias, proyectos y aprendizajes para crecer y generar impacto en mi comunidad y más allá.</p>
-    <div class="hero-cta">
-      <button class="btn btn-filled magnetic" onclick="document.getElementById('sobre').scrollIntoView({behavior:'smooth'})">Conóceme</button>
-      <button class="btn btn-outline magnetic" onclick="document.getElementById('proyectos').scrollIntoView({behavior:'smooth'})">Ver proyectos</button>
-    </div>
-  </div>
-  <div class="hero-aside">
-    <div class="hero-aside-big">Y</div>
-    <div class="hero-photo-wrap">
-      <img class="hero-photo" id="heroPhoto" src="images/profile.jpg" alt="Yermari" onerror="this.style.display='none';document.getElementById('heroPhotoPlaceholder').style.display='flex'">
-      <div class="hero-photo-placeholder" id="heroPhotoPlaceholder" style="display:none">Y</div>
-      <div class="hero-photo-name">Yermari Flores</div>
-    </div>
-    <div class="hero-loc">Costa Rica · 2026</div>
-  </div>
+<div class="hero-main" id="hero-main">
+<div class="hero-kicker">Costa Rica · Liderazgo · Propósito</div>
+<h1 class="hero-h1">Construyendo mi<br/>camino con <em>propósito</em><br/>y determinación.</h1>
+<p class="hero-sub">Compartiendo experiencias, proyectos y aprendizajes para crecer y generar impacto en mi comunidad y más allá.</p>
+<div class="hero-cta">
+<button class="btn btn-filled magnetic" onclick="document.getElementById('sobre').scrollIntoView({behavior:'smooth'})">Conóceme</button>
+<button class="btn btn-outline magnetic" onclick="document.getElementById('proyectos').scrollIntoView({behavior:'smooth'})">Ver proyectos</button>
 </div>
-
+</div>
+<div class="hero-aside">
+<div class="hero-aside-big">Y</div>
+<div class="hero-photo-wrap">
+<img alt="Yermari" class="hero-photo" id="heroPhoto" onerror="this.style.display='none';document.getElementById('heroPhotoPlaceholder').style.display='flex'" src="images/profile.jpg"/>
+<div class="hero-photo-placeholder" id="heroPhotoPlaceholder" style="display:none">Y</div>
+<div class="hero-photo-name">Yermari Flores</div>
+</div>
+<div class="hero-loc">Costa Rica · 2026</div>
+</div>
+</div>
 <!-- SOBRE MÍ -->
 <section id="sobre">
-  <div class="eyebrow">Quién soy</div>
-  <h2 class="reveal">Sobre <em>mí</em></h2>
-  <div class="about-grid">
-    <div class="about-body reveal" style="transition-delay:0.1s">
-      <p>Soy Yermari, una joven costarricense apasionada por el crecimiento personal, el liderazgo y el impacto social. Creo que cada experiencia es una oportunidad de aprender y cada persona que encontramos en el camino nos enseña algo valioso.</p>
-      <p>Mi trayectoria ha estado marcada por la búsqueda constante de nuevos retos, el desarrollo de habilidades que me permitan servir mejor a mi comunidad y la construcción de relaciones auténticas y significativas.</p>
-      <p>Me motiva construir un mundo mejor comenzando por nosotras mismas: con disciplina, empatía y visión clara de hacia dónde queremos ir.</p>
-    </div>
-    <div class="reveal" style="transition-delay:0.2s" id="values-container">
-      <div class="values-head">Mis valores</div>
-      <div class="val"><span class="val-n">01</span>Responsabilidad</div>
-      <div class="val"><span class="val-n">02</span>Empatía</div>
-      <div class="val"><span class="val-n">03</span>Disciplina</div>
-      <div class="val"><span class="val-n">04</span>Perseverancia</div>
-      <div class="val"><span class="val-n">05</span>Honestidad</div>
-      <div class="val"><span class="val-n">06</span>Liderazgo</div>
-    </div>
-  </div>
+<div class="eyebrow">Quién soy</div>
+<h2 class="reveal">Sobre <em>mí</em></h2>
+<div class="about-grid">
+<div class="about-body reveal" style="transition-delay:0.1s"><p>Soy Yermari, un joven costarricense apasionado por el crecimiento personal, el liderazgo y el impacto social. Creo que cada experiencia es una oportunidad de aprender y cada persona que encontramos en el camino nos enseña algo valioso.</p><p>Mi trayectoria ha estado marcada por la búsqueda constante de nuevos retos, el desarrollo de habilidades que me permitan servir mejor a mi comunidad y la construcción de relaciones auténticas y significativas.</p><p>Me motiva construir un mundo mejor comenzando por nosotras mismas: con disciplina, empatía y visión clara de hacia dónde queremos ir.</p></div>
+<div class="reveal" id="values-container" style="transition-delay:0.2s">
+<div class="values-head">Mis valores</div>
+<div class="val"><span class="val-n">01</span>Responsabilidad</div>
+<div class="val"><span class="val-n">02</span>Empatía</div>
+<div class="val"><span class="val-n">03</span>Disciplina</div>
+<div class="val"><span class="val-n">04</span>Perseverancia</div>
+<div class="val"><span class="val-n">05</span>Honestidad</div>
+<div class="val"><span class="val-n">06</span>Liderazgo</div>
+</div>
+</div>
 </section>
-
 <!-- TRAYECTORIA -->
-<section id="trayectoria" class="alt">
-  <div class="eyebrow">Mi historia</div>
-  <h2 class="reveal"><em>Trayectoria</em></h2>
-  <div class="tl">
-    <div class="tl-row">
-      <div class="tl-y">2022</div><div class="tl-sp"></div>
-      <div class="tl-c">
-        <div class="tl-t">Inicio del camino académico</div>
-        <div class="tl-d">Formación universitaria con enfoque en liderazgo y gestión, construyendo las bases del desarrollo profesional.</div>
-      </div>
-    </div>
-    <div class="tl-row">
-      <div class="tl-y">2023</div><div class="tl-sp"></div>
-      <div class="tl-c">
-        <div class="tl-t">Primeros proyectos de impacto</div>
-        <div class="tl-d">Participación en iniciativas comunitarias y desarrollo de habilidades en tecnología, emprendimiento e innovación social.</div>
-      </div>
-    </div>
-    <div class="tl-row">
-      <div class="tl-y">2024</div><div class="tl-sp"></div>
-      <div class="tl-c">
-        <div class="tl-t">Emprendimiento y tecnología</div>
-        <div class="tl-d">Lanzamiento de proyectos tecnológicos propios, explorando el potencial de la inteligencia artificial para resolver problemas reales.</div>
-      </div>
-    </div>
-    <div class="tl-row">
-      <div class="tl-y">2025–hoy</div><div class="tl-sp"></div>
-      <div class="tl-c">
-        <div class="tl-t">Construyendo mi marca personal</div>
-        <div class="tl-d">Consolidando proyectos, construyendo presencia digital y compartiendo aprendizajes para inspirar a otras personas jóvenes.</div>
-      </div>
-    </div>
-  </div>
+<section class="alt" id="trayectoria">
+<div class="eyebrow">Mi historia</div>
+<h2 class="reveal"><em>Trayectoria</em></h2>
+<div class="tl">
+<div class="tl-row">
+<div class="tl-y">2022</div><div class="tl-sp"></div>
+<div class="tl-c">
+<div class="tl-t">Inicio del camino académico</div>
+<div class="tl-d">Formación universitaria con enfoque en liderazgo y gestión, construyendo las bases del desarrollo profesional.</div>
+</div>
+</div>
+<div class="tl-row">
+<div class="tl-y">2023</div><div class="tl-sp"></div>
+<div class="tl-c">
+<div class="tl-t">Primeros proyectos de impacto</div>
+<div class="tl-d">Participación en iniciativas comunitarias y desarrollo de habilidades en tecnología, emprendimiento e innovación social.</div>
+</div>
+</div>
+<div class="tl-row">
+<div class="tl-y">2024</div><div class="tl-sp"></div>
+<div class="tl-c">
+<div class="tl-t">Emprendimiento y tecnología</div>
+<div class="tl-d">Lanzamiento de proyectos tecnológicos propios, explorando el potencial de la inteligencia artificial para resolver problemas reales.</div>
+</div>
+</div>
+<div class="tl-row">
+<div class="tl-y">2025–hoy</div><div class="tl-sp"></div>
+<div class="tl-c">
+<div class="tl-t">Construyendo mi marca personal</div>
+<div class="tl-d">Consolidando proyectos, construyendo presencia digital y compartiendo aprendizajes para inspirar a otras personas jóvenes.</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- PROYECTOS -->
 <section id="proyectos">
-  <div class="eyebrow">Lo que creo</div>
-  <h2 class="reveal">Proyectos</h2>
-  <div class="bento reveal" style="transition-delay:0.15s">
-    <div class="bc wide tilt">
-      <i class="ti ti-scissors bc-icon" aria-hidden="true"></i>
-      <div class="bc-tag">Tecnología · Barberías · Costa Rica</div>
-      <div class="bc-title">Turno App</div>
-      <div class="bc-desc">Plataforma de reservas para barberías en Costa Rica. MVP con Next.js, Prisma y SQLite, diseñada para agilizar la gestión de citas y mejorar la experiencia del cliente.</div>
-    </div>
-    <div class="bc tilt">
-      <i class="ti ti-message-chatbot bc-icon" aria-hidden="true"></i>
-      <div class="bc-tag">IA · Restaurantes</div>
-      <div class="bc-title">Banbi IA</div>
-      <div class="bc-desc">Agente conversacional para reservaciones vía WhatsApp con Claude API y FastAPI.</div>
-    </div>
-    <div class="bc tilt">
-      <i class="ti ti-user-star bc-icon" aria-hidden="true"></i>
-      <div class="bc-tag">Productividad · Personal</div>
-      <div class="bc-title">Alana</div>
-      <div class="bc-desc">Asistente virtual para gestión de WhatsApp y correos urgentes impulsada por IA.</div>
-    </div>
-    <div class="bc wide tilt">
-      <i class="ti ti-building-store bc-icon" aria-hidden="true"></i>
-      <div class="bc-tag">Emprendimiento · Multi-negocio</div>
-      <div class="bc-title">Recepción IA</div>
-      <div class="bc-desc">Recepcionista IA para restaurantes, hoteles y barberías. Base de datos aislada por cliente, claves gestionadas por Yermari, todo vía WhatsApp.</div>
-    </div>
-  </div>
+<div class="eyebrow">Lo que creo</div>
+<h2 class="reveal">Proyectos</h2>
+<div class="bento reveal" style="transition-delay:0.15s">
+<div class="bc wide tilt">
+<i aria-hidden="true" class="ti ti-scissors bc-icon"></i>
+<div class="bc-tag">Tecnología · Barberías · Costa Rica</div>
+<div class="bc-title">Turno App</div>
+<div class="bc-desc">Plataforma de reservas para barberías en Costa Rica. MVP con Next.js, Prisma y SQLite, diseñada para agilizar la gestión de citas y mejorar la experiencia del cliente.</div>
+</div>
+<div class="bc tilt">
+<i aria-hidden="true" class="ti ti-message-chatbot bc-icon"></i>
+<div class="bc-tag">IA · Restaurantes</div>
+<div class="bc-title">Banbi IA</div>
+<div class="bc-desc">Agente conversacional para reservaciones vía WhatsApp con Claude API y FastAPI.</div>
+</div>
+<div class="bc tilt">
+<i aria-hidden="true" class="ti ti-user-star bc-icon"></i>
+<div class="bc-tag">Productividad · Personal</div>
+<div class="bc-title">Alana</div>
+<div class="bc-desc">Asistente virtual para gestión de WhatsApp y correos urgentes impulsada por IA.</div>
+</div>
+<div class="bc wide tilt">
+<i aria-hidden="true" class="ti ti-building-store bc-icon"></i>
+<div class="bc-tag">Emprendimiento · Multi-negocio</div>
+<div class="bc-title">Recepción IA</div>
+<div class="bc-desc">Recepcionista IA para restaurantes, hoteles y barberías. Base de datos aislada por cliente, claves gestionadas por Yermari, todo vía WhatsApp.</div>
+</div>
+</div>
 </section>
-
 <!-- GALERÍA -->
 <section class="alt">
-  <div class="eyebrow">Momentos</div>
-  <h2 class="reveal">Galería</h2>
-  <div class="gallery-grid reveal" style="transition-delay:0.1s">
-    <div class="g-item wide">
-      <img src="https://picsum.photos/seed/yw-main/800/400" alt="Eventos y actividades" loading="lazy">
-      <div class="g-caption">Eventos y actividades</div>
-    </div>
-    <div class="g-item">
-      <img src="https://picsum.photos/seed/yw-cr2/400/400" alt="Logros" loading="lazy">
-      <div class="g-caption">Logros</div>
-    </div>
-    <div class="g-item">
-      <img src="https://picsum.photos/seed/yw-cr3/400/400" alt="Viajes" loading="lazy">
-      <div class="g-caption">Viajes</div>
-    </div>
-    <div class="g-item">
-      <img src="https://picsum.photos/seed/yw-cr4/400/400" alt="Comunidad" loading="lazy">
-      <div class="g-caption">Comunidad</div>
-    </div>
-    <div class="g-item wide">
-      <img src="https://picsum.photos/seed/yw-cr5/800/400" alt="Experiencias" loading="lazy">
-      <div class="g-caption">Experiencias importantes</div>
-    </div>
-  </div>
+<div class="eyebrow">Momentos</div>
+<h2 class="reveal">Galería</h2>
+<div class="gallery-grid reveal" style="transition-delay:0.1s">
+<div class="g-item wide">
+<img alt="Eventos y actividades" loading="lazy" src="https://picsum.photos/seed/yw-main/800/400"/>
+<div class="g-caption">Eventos y actividades</div>
+</div>
+<div class="g-item">
+<img alt="Logros" loading="lazy" src="https://picsum.photos/seed/yw-cr2/400/400"/>
+<div class="g-caption">Logros</div>
+</div>
+<div class="g-item">
+<img alt="Viajes" loading="lazy" src="https://picsum.photos/seed/yw-cr3/400/400"/>
+<div class="g-caption">Viajes</div>
+</div>
+<div class="g-item">
+<img alt="Comunidad" loading="lazy" src="https://picsum.photos/seed/yw-cr4/400/400"/>
+<div class="g-caption">Comunidad</div>
+</div>
+<div class="g-item wide">
+<img alt="Experiencias" loading="lazy" src="https://picsum.photos/seed/yw-cr5/800/400"/>
+<div class="g-caption">Experiencias importantes</div>
+</div>
+</div>
 </section>
-
 <!-- METAS -->
 <section>
-  <div class="eyebrow">Hacia el futuro</div>
-  <h2 class="reveal">Metas y <em>visión</em></h2>
-  <div class="goals-grid">
-    <div class="reveal" style="transition-delay:0.1s">
-      <div class="goal-period">Corto plazo</div>
-      <div class="goal-item"><span class="goal-idx">01</span>Lanzar productos tecnológicos en Costa Rica</div>
-      <div class="goal-item"><span class="goal-idx">02</span>Construir una red sólida de colaboradores</div>
-      <div class="goal-item"><span class="goal-idx">03</span>Fortalecer habilidades en IA y emprendimiento</div>
-      <div class="goal-item"><span class="goal-idx">04</span>Compartir conocimiento con más personas</div>
-    </div>
-    <div class="reveal" style="transition-delay:0.2s">
-      <div class="goal-period">Largo plazo</div>
-      <div class="goal-item"><span class="goal-idx">01</span>Crear empresas con impacto social real</div>
-      <div class="goal-item"><span class="goal-idx">02</span>Inspirar a la próxima generación de líderes</div>
-      <div class="goal-item"><span class="goal-idx">03</span>Expandir proyectos a toda Latinoamérica</div>
-      <div class="goal-item"><span class="goal-idx">04</span>Ser referente de liderazgo femenino joven</div>
-    </div>
-  </div>
+<div class="eyebrow">Hacia el futuro</div>
+<h2 class="reveal">Metas y <em>visión</em></h2>
+<div class="goals-grid">
+<div class="reveal" style="transition-delay:0.1s">
+<div class="goal-period">Corto plazo</div>
+<div class="goal-item"><span class="goal-idx">01</span>Lanzar productos tecnológicos en Costa Rica</div>
+<div class="goal-item"><span class="goal-idx">02</span>Construir una red sólida de colaboradores</div>
+<div class="goal-item"><span class="goal-idx">03</span>Fortalecer habilidades en IA y emprendimiento</div>
+<div class="goal-item"><span class="goal-idx">04</span>Compartir conocimiento con más personas</div>
+</div>
+<div class="reveal" style="transition-delay:0.2s">
+<div class="goal-period">Largo plazo</div>
+<div class="goal-item"><span class="goal-idx">01</span>Crear empresas con impacto social real</div>
+<div class="goal-item"><span class="goal-idx">02</span>Inspirar a la próxima generación de líderes</div>
+<div class="goal-item"><span class="goal-idx">03</span>Expandir proyectos a toda Latinoamérica</div>
+<div class="goal-item"><span class="goal-idx">04</span>Ser referente de liderazgo femenino joven</div>
+</div>
+</div>
 </section>
-
 <!-- BLOG -->
-<section id="blog" class="alt">
-  <div class="eyebrow">Reflexiones</div>
-  <h2 class="reveal">Blog</h2>
-  <div class="blog-list">
-    <div class="blog-entry reveal" style="transition-delay:0.05s">
-      <div class="blog-meta">
-        <div class="blog-date">Jun 2026</div>
-        <div class="blog-cat">Marca personal</div>
-      </div>
-      <div>
-        <div class="blog-title">Por qué construir tu marca personal desde joven</div>
-        <div class="blog-excerpt">En un mundo digitalizado, tu reputación en línea es un activo que vale la pena cultivar desde temprano. Esto es lo que aprendí al empezar.</div>
-      </div>
-    </div>
-    <div class="blog-entry reveal" style="transition-delay:0.15s">
-      <div class="blog-meta">
-        <div class="blog-date">May 2026</div>
-        <div class="blog-cat">Tecnología</div>
-      </div>
-      <div>
-        <div class="blog-title">Lo que aprendí emprendiendo con IA</div>
-        <div class="blog-excerpt">La inteligencia artificial no reemplaza a las personas, las potencia. Así fue como construí mis primeros proyectos y lo que descubrí en el camino.</div>
-      </div>
-    </div>
-    <div class="blog-entry reveal" style="transition-delay:0.25s">
-      <div class="blog-meta">
-        <div class="blog-date">Abr 2026</div>
-        <div class="blog-cat">Liderazgo</div>
-      </div>
-      <div>
-        <div class="blog-title">Disciplina sobre motivación: el secreto del progreso real</div>
-        <div class="blog-excerpt">La motivación desaparece. La disciplina es lo que te mantiene avanzando cuando no tienes ganas. Cómo la cultivé y lo que cambió.</div>
-      </div>
-    </div>
-  </div>
+<section class="alt" id="blog">
+<div class="eyebrow">Reflexiones</div>
+<h2 class="reveal">Blog</h2>
+<div class="blog-list">
+<div class="blog-entry reveal" style="transition-delay:0.05s">
+<div class="blog-meta">
+<div class="blog-date">Jun 2026</div>
+<div class="blog-cat">Marca personal</div>
+</div>
+<div>
+<div class="blog-title">Por qué construir tu marca personal desde joven</div>
+<div class="blog-excerpt">En un mundo digitalizado, tu reputación en línea es un activo que vale la pena cultivar desde temprano. Esto es lo que aprendí al empezar.</div>
+</div>
+</div>
+<div class="blog-entry reveal" style="transition-delay:0.15s">
+<div class="blog-meta">
+<div class="blog-date">May 2026</div>
+<div class="blog-cat">Tecnología</div>
+</div>
+<div>
+<div class="blog-title">Lo que aprendí emprendiendo con IA</div>
+<div class="blog-excerpt">La inteligencia artificial no reemplaza a las personas, las potencia. Así fue como construí mis primeros proyectos y lo que descubrí en el camino.</div>
+</div>
+</div>
+<div class="blog-entry reveal" style="transition-delay:0.25s">
+<div class="blog-meta">
+<div class="blog-date">Abr 2026</div>
+<div class="blog-cat">Liderazgo</div>
+</div>
+<div>
+<div class="blog-title">Disciplina sobre motivación: el secreto del progreso real</div>
+<div class="blog-excerpt">La motivación desaparece. La disciplina es lo que te mantiene avanzando cuando no tienes ganas. Cómo la cultivé y lo que cambió.</div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- CONTACTO -->
 <section id="contacto">
-  <div class="eyebrow">Hablemos</div>
-  <h2 class="reveal">Contacto</h2>
-  <div class="contact-grid">
-    <div class="reveal" style="transition-delay:0.1s">
-      <div class="contact-head">Me encanta conectar con personas que comparten <em>visión e impacto.</em></div>
-      <div class="clink">
-        <span>yermariflores081@gmail.com</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </div>
-      <div class="clink">
-        <span>Instagram</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </div>
-      <div class="clink">
-        <span>LinkedIn</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </div>
-      <div class="clink">
-        <span>Costa Rica</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-      </div>
-    </div>
-    <form class="form reveal" style="transition-delay:0.2s" onsubmit="return false">
-      <div class="form-row">
-        <div class="form-field">
-          <label class="form-label" for="fname">Nombre</label>
-          <input class="form-input" id="fname" type="text" placeholder="Tu nombre">
-        </div>
-        <div class="form-field">
-          <label class="form-label" for="femail">Correo</label>
-          <input class="form-input" id="femail" type="email" placeholder="tu@correo.com">
-        </div>
-      </div>
-      <div class="form-field">
-        <label class="form-label" for="fsubject">Asunto</label>
-        <input class="form-input" id="fsubject" type="text" placeholder="De qué quieres hablar">
-      </div>
-      <div class="form-field">
-        <label class="form-label" for="fmsg">Mensaje</label>
-        <textarea class="form-textarea" id="fmsg" placeholder="Tu mensaje..."></textarea>
-      </div>
-      <button class="form-submit magnetic" type="submit">Enviar mensaje</button>
-    </form>
-  </div>
+<div class="eyebrow">Hablemos</div>
+<h2 class="reveal">Contacto</h2>
+<div class="contact-grid">
+<div class="reveal" style="transition-delay:0.1s">
+<div class="contact-head">Me encanta conectar con personas que comparten <em>visión e impacto.</em></div>
+<div class="clink">
+<span>yermariflores081@gmail.com</span>
+<svg aria-hidden="true" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="14"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</div>
+<div class="clink">
+<span>Instagram</span>
+<svg aria-hidden="true" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="14"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</div>
+<div class="clink">
+<span>LinkedIn</span>
+<svg aria-hidden="true" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="14"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+</div>
+<div class="clink">
+<span>Costa Rica</span>
+<svg aria-hidden="true" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 24 24" width="14"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+</div>
+</div>
+<form class="form reveal" onsubmit="return false" style="transition-delay:0.2s">
+<div class="form-row">
+<div class="form-field">
+<label class="form-label" for="fname">Nombre</label>
+<input class="form-input" id="fname" placeholder="Tu nombre" type="text"/>
+</div>
+<div class="form-field">
+<label class="form-label" for="femail">Correo</label>
+<input class="form-input" id="femail" placeholder="tu@correo.com" type="email"/>
+</div>
+</div>
+<div class="form-field">
+<label class="form-label" for="fsubject">Asunto</label>
+<input class="form-input" id="fsubject" placeholder="De qué quieres hablar" type="text"/>
+</div>
+<div class="form-field">
+<label class="form-label" for="fmsg">Mensaje</label>
+<textarea class="form-textarea" id="fmsg" placeholder="Tu mensaje..."></textarea>
+</div>
+<button class="form-submit magnetic" type="submit">Enviar mensaje</button>
+</form>
+</div>
 </section>
-
 <footer>
-  <a href="#inicio" class="footer-logo">YERMAR<em>I</em></a>
-  <div class="footer-copy">© 2026 · Costa Rica · Construyendo con propósito</div>
+<a class="footer-logo" href="#inicio">YERMAR<em>I</em></a>
+<div class="footer-copy">© 2026 · Costa Rica · Construyendo con propósito</div>
 </footer>
-
 <script>
 (function () {
   var ease = 'cubic-bezier(0.16,1,0.3,1)';
@@ -883,6 +867,5 @@ footer {
   });
 })();
 </script>
-
 </body>
 </html>

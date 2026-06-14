@@ -482,9 +482,31 @@ footer {
 @media (max-width: 768px) {
   .nav { padding: 1rem 1.5rem; }
   .nav-links { gap: 1.25rem; }
-  .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 100px; }
-  .hero-main { padding: 3rem 1.5rem; }
-  .hero-aside { display: none; }
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    min-height: auto;
+    padding-top: 70px;
+  }
+  .hero-aside {
+    display: flex;
+    order: -1;
+    min-height: auto;
+    padding: 2rem 1.5rem 1.5rem;
+    border-right: none;
+    border-bottom: 0.5px solid var(--rule);
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+    justify-content: flex-start;
+  }
+  .hero-aside-big { display: none; }
+  .hero-photo { width: 72px !important; height: 72px !important; }
+  .hero-photo-placeholder { width: 72px !important; height: 72px !important; font-size: 28px !important; }
+  .hero-photo-name { font-size: 10px; text-align: left; }
+  .hero-photo-wrap { flex-direction: row; align-items: center; gap: .875rem; }
+  .hero-loc { position: static; border-top: none; padding-top: 0; font-size: 10px; color: var(--ink3); }
+  .hero-main { padding: 2.5rem 1.5rem 3rem; border-right: none; }
   section { padding: 3.5rem 1.5rem; }
   .about-grid { grid-template-columns: 1fr; }
   .bento { grid-template-columns: 1fr; }

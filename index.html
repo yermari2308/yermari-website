@@ -378,22 +378,52 @@ h2 em { font-style: italic; font-weight: 300; }
 /* GALLERY */
 .gallery-grid {
   margin-top: 2.25rem;
-  display: grid; grid-template-columns: repeat(3,1fr);
-  gap: 1px; background: var(--rule); border: 0.5px solid var(--rule);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 280px 280px;
+  gap: 3px;
 }
-.g-item { overflow: hidden; aspect-ratio: 1; position: relative; background: var(--bg2); }
-.g-item.wide { grid-column: span 2; aspect-ratio: 2/1; }
-.g-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.7s var(--ease), filter 0.5s; filter: saturate(0.75); display: block; }
-.g-item:hover img { transform: scale(1.07); filter: saturate(1); }
+.g-item {
+  overflow: hidden;
+  position: relative;
+  background: var(--bg2);
+  cursor: pointer;
+}
+/* Layout editorial: imagen ancha izquierda, dos cuadradas derecha, luego al revés */
+.g-item:nth-child(1) { grid-column: span 7; grid-row: 1; }
+.g-item:nth-child(2) { grid-column: span 5; grid-row: 1; }
+.g-item:nth-child(3) { grid-column: span 4; grid-row: 2; }
+.g-item:nth-child(4) { grid-column: span 4; grid-row: 2; }
+.g-item:nth-child(5) { grid-column: span 4; grid-row: 2; }
+.g-item.wide { grid-column: unset; }
+
+.g-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease), filter 0.5s;
+  filter: saturate(0.8) brightness(0.95);
+  display: block;
+}
+.g-item:hover img { transform: scale(1.05); filter: saturate(1.1) brightness(1); }
+
 .g-caption {
   position: absolute; bottom: 0; left: 0; right: 0;
-  padding: 2rem 1rem 0.875rem;
-  background: linear-gradient(transparent, rgba(28,24,18,0.5));
-  color: #FAF8F4; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase;
-  opacity: 0; transform: translateY(6px);
-  transition: opacity 0.3s, transform 0.3s;
+  padding: 3rem 1.25rem 1rem;
+  background: linear-gradient(transparent, rgba(20,16,10,0.72));
+  color: #FAF8F4;
+  display: flex; flex-direction: column; gap: 2px;
+  transform: translateY(4px);
+  transition: transform 0.35s var(--ease);
 }
-.g-item:hover .g-caption { opacity: 1; transform: none; }
+.g-item:hover .g-caption { transform: none; }
+.g-caption-label {
+  font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(200,152,42,0.9);
+}
+.g-caption-text {
+  font-family: var(--serif); font-size: 16px; font-weight: 400;
+  line-height: 1.25; color: rgba(244,240,230,0.95);
+}
 
 /* GOALS */
 .goals-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem 4rem; margin-top: 2.25rem; }
@@ -511,8 +541,13 @@ footer {
   .about-grid { grid-template-columns: 1fr; }
   .bento { grid-template-columns: 1fr; }
   .bc.wide { grid-column: span 1; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; }
-  .g-item.wide { grid-column: span 2; aspect-ratio: auto; min-height: 200px; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 200px 180px 180px; }
+  .g-item:nth-child(1) { grid-column: span 2; grid-row: 1; }
+  .g-item:nth-child(2) { grid-column: span 1; grid-row: 2; }
+  .g-item:nth-child(3) { grid-column: span 1; grid-row: 2; }
+  .g-item:nth-child(4) { grid-column: span 1; grid-row: 3; }
+  .g-item:nth-child(5) { grid-column: span 1; grid-row: 3; }
+  .g-caption-text { font-size: 13px; }
   .goals-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .form-row { grid-template-columns: 1fr; }
@@ -524,8 +559,8 @@ footer {
 @media (max-width: 480px) {
   .nav-links { display: none; }
   .hero-h1 { font-size: 32px; }
-  .gallery-grid { grid-template-columns: 1fr; }
-  .g-item.wide { grid-column: span 1; aspect-ratio: auto; min-height: 220px; }
+  .gallery-grid { grid-template-columns: 1fr; grid-template-rows: repeat(5, 220px); }
+  .g-item:nth-child(n) { grid-column: span 1; grid-row: auto; }
 }
 </style>
 </head>
@@ -620,25 +655,25 @@ footer {
 <h2 class="reveal">Proyectos</h2>
 <div class="bento reveal" style="transition-delay:0.15s">
 <div class="bc wide tilt">
-<i aria-hidden="true" class="ti ti-scissors bc-icon"></i>
+<i aria-hidden="true" class="ti ti-brain bc-icon"></i>
 <div class="bc-tag">Tecnología · Costa Rica</div>
 <div class="bc-title">Agente IA cr</div>
 <div class="bc-desc">Proyecto empresarial enfocado en modernizar las empresas costarricenses mediante la implementación de soluciones basadas en inteligencia artificial, optimizando procesos, aumentando la productividad e impulsando la innovación.</div>
 </div>
 <div class="bc tilt">
-<i aria-hidden="true" class="ti ti-message-chatbot bc-icon"></i>
-<div class="bc-tag">Social - Juventud - Activismo</div>
+<i aria-hidden="true" class="ti ti-heart-handshake bc-icon"></i>
+<div class="bc-tag">Social · Juventud · Activismo</div>
 <div class="bc-title">Movimiento Juventud Saludable</div>
 <div class="bc-desc">Iniciativa enfocada en promover el bienestar integral de la juventud mediante el impulso de hábitos saludables, el desarrollo personal, la participación activa y el compromiso con la comunidad.</div>
 </div>
 <div class="bc tilt">
-<i aria-hidden="true" class="ti ti-user-star bc-icon"></i>
-<div class="bc-tag">Liderazgo - Juventud - Incidencia</div>
+<i aria-hidden="true" class="ti ti-podium bc-icon"></i>
+<div class="bc-tag">Liderazgo · Juventud · Incidencia</div>
 <div class="bc-title">Incide Costa Rica</div>
 <div class="bc-desc">Organización dedicada a la formación de líderes, el fortalecimiento de la participación ciudadana y la promoción de iniciativas que contribuyan al desarrollo democrático y social del país.</div>
 </div>
 <div class="bc wide tilt">
-<i aria-hidden="true" class="ti ti-building-store bc-icon"></i>
+<i aria-hidden="true" class="ti ti-speakerphone bc-icon"></i>
 <div class="bc-tag">Emprendimiento · Multi-negocio</div>
 <div class="bc-title">Vertice Cr</div>
 <div class="bc-desc">Agencia de marketing enfocada en ayudar a marcas y empresas a fortalecer su presencia digital mediante estrategias innovadoras de comunicación, contenido y posicionamiento.</div>
@@ -649,26 +684,41 @@ footer {
 <section class="alt">
 <div class="eyebrow">Momentos</div>
 <h2 class="reveal">Galería</h2>
-<div class="gallery-grid reveal" style="transition-delay:0.1s">
-<div class="g-item wide">
-<img alt="Eventos y actividades" loading="lazy" src="images/“Costa_Rica_tu_mejor_capitulo_aun_no_se_ha_escrito”.png"/>
-<div class="g-caption">Visión</div>
+<div class=”gallery-grid reveal” style=”transition-delay:0.1s”>
+<div class=”g-item”>
+<img alt=”Liderazgo y participación cívica” loading=”lazy” src=”images/WhatsApp_Image_2026-06-14_at_6.49.10_PM.jpeg”/>
+<div class=”g-caption”>
+  <div class=”g-caption-label”>Liderazgo · Participación</div>
+  <div class=”g-caption-text”>Sesión Solemne Provincia de Limón</div>
 </div>
-<div class="g-item">
-<img alt="Logros" loading="lazy" src="images/WhatsApp_Image_2026-06-14_at_6.25.51_PM.jpeg"/>
-<div class="g-caption">Empresa</div>
 </div>
-<div class="g-item">
-<img alt="Viajes" loading="lazy" src="images/WhatsApp_Image_2026-06-14_at_6.45.43_PM.jpeg"/>
-<div class="g-caption">Institucional</div>
+<div class=”g-item”>
+<img alt=”Asamblea Legislativa Costa Rica” loading=”lazy” src=”images/WhatsApp_Image_2026-06-14_at_6.45.43_PM.jpeg”/>
+<div class=”g-caption”>
+  <div class=”g-caption-label”>Costa Rica · Identidad</div>
+  <div class=”g-caption-text”>Asamblea Legislativa</div>
 </div>
-<div class="g-item">
-<img alt="Comunidad" loading="lazy" src="images/WhatsApp_Image_2026-06-14_at_6.49.10_PM.jpeg"/>
-<div class="g-caption">Desarrollo</div>
 </div>
-<div class="g-item wide">
-<img alt="Experiencias" loading="lazy" src="images/WhatsApp_Image_2026-06-14_at_6.51.15_PM.jpeg"/>
-<div class="g-caption">Experiencias importantes</div>
+<div class=”g-item”>
+<img alt=”AgenteIA.cr - Tecnología e IA” loading=”lazy” src=”images/WhatsApp_Image_2026-06-14_at_6.25.51_PM.jpeg”/>
+<div class=”g-caption”>
+  <div class=”g-caption-label”>Tecnología · IA</div>
+  <div class=”g-caption-text”>AgenteIA.cr</div>
+</div>
+</div>
+<div class=”g-item”>
+<img alt=”El inicio del camino” loading=”lazy” src=”images/WhatsApp_Image_2026-06-14_at_6.51.15_PM.jpeg”/>
+<div class=”g-caption”>
+  <div class=”g-caption-label”>Orígenes · Historia</div>
+  <div class=”g-caption-text”>El inicio del camino</div>
+</div>
+</div>
+<div class=”g-item”>
+<img alt=”Visión Costa Rica” loading=”lazy” src=”images/Costa_Rica_tu_mejor_capitulo.png”/>
+<div class=”g-caption”>
+  <div class=”g-caption-label”>Visión · Propósito</div>
+  <div class=”g-caption-text”>Costa Rica, tu mejor capítulo</div>
+</div>
 </div>
 </div>
 </section>

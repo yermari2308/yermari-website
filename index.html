@@ -427,6 +427,16 @@ h2 em { font-style: italic; font-weight: 300; }
 
 /* GOALS */
 .goals-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem 4rem; margin-top: 2.25rem; }
+
+/* ÚNETE */
+.unete-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem 4rem; margin-top: 2.25rem; }
+.unete-item {
+  display: flex; gap: 0.875rem; align-items: baseline;
+  padding: 0.85rem 0; border-bottom: 0.5px solid var(--rule);
+  font-size: 13px; color: var(--ink2); font-weight: 300; line-height: 1.6;
+}
+.unete-item:first-of-type { border-top: 0.5px solid var(--rule); }
+.unete-idx { font-family: var(--serif); font-size: 14px; color: var(--gold); flex-shrink: 0; width: 1.5rem; }
 .goal-period { font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
 .goal-item {
   display: flex; gap: 0.875rem; align-items: baseline;
@@ -661,31 +671,31 @@ footer {
 <div class="eyebrow">Lo que defiendo</div>
 <h2 class="reveal">Propuestas <em>concretas</em></h2>
 <div class="bento reveal" style="transition-delay:0.15s">
-<div class="bc wide tilt">
+<div class="bc prop wide tilt">
 <i aria-hidden="true" class="ti ti-map-pin bc-icon"></i>
 <div class="bc-tag">Descentralización · Regiones</div>
 <div class="bc-title">Costa Rica para todos, no solo para el Valle Central</div>
 <div class="bc-desc">Limón, Guanacaste, Puntarenas y las zonas fronterizas merecen la misma inversión, infraestructura y oportunidades que el Gran Área Metropolitana. Propongo presupuestos regionales reales y participación ciudadana en cada decisión que afecte a las provincias.</div>
 </div>
-<div class="bc tilt">
+<div class="bc prop tilt">
 <i aria-hidden="true" class="ti ti-users bc-icon"></i>
 <div class="bc-tag">Juventud · Empleo · Futuro</div>
 <div class="bc-title">Empleo digno para la juventud</div>
 <div class="bc-desc">El desempleo juvenil en Costa Rica supera el 20%. Impulsamos programas de primer empleo, pasantías remuneradas y formación técnica vinculada a sectores estratégicos como tecnología, turismo y agroindustria.</div>
 </div>
-<div class="bc tilt">
+<div class="bc prop tilt">
 <i aria-hidden="true" class="ti ti-device-laptop bc-icon"></i>
 <div class="bc-tag">Tecnología · Modernización</div>
 <div class="bc-title">Gobierno digital y transparente</div>
 <div class="bc-desc">El Estado costarricense debe adoptar tecnología para ser más eficiente, menos burocrático y totalmente transparente. Cada colón público debe poder rastrearse. La IA puede ser una herramienta del pueblo, no solo de las empresas.</div>
 </div>
-<div class="bc tilt">
+<div class="bc prop tilt">
 <i aria-hidden="true" class="ti ti-school bc-icon"></i>
 <div class="bc-tag">Educación · Oportunidad</div>
 <div class="bc-title">Educación que prepare para el siglo XXI</div>
 <div class="bc-desc">El sistema educativo costarricense debe enseñar pensamiento crítico, habilidades digitales y emprendimiento desde temprana edad. La calidad educativa no puede depender del código postal de cada estudiante.</div>
 </div>
-<div class="bc wide tilt">
+<div class="bc prop wide tilt">
 <i aria-hidden="true" class="ti ti-heart-handshake bc-icon"></i>
 <div class="bc-tag">Salud · Bienestar · Juventud</div>
 <div class="bc-title">Salud mental y bienestar como prioridad nacional</div>
@@ -730,35 +740,35 @@ footer {
 <h2 class="reveal">Galería</h2>
 <div class="gallery-grid">
 <div class="g-item">
-<img alt="Liderazgo y participación cívica" src="images/WhatsApp_Image_2026-06-14_at_6.49.10_PM.jpeg?v=2"/>
+<img alt="Liderazgo y participación cívica" src="images/WhatsApp_Image_2026-06-14_at_6.49.10_PM.jpeg"/>
 <div class="g-caption">
   <div class="g-caption-label">Liderazgo · Participación</div>
   <div class="g-caption-text">Sesión Solemne Provincia de Limón</div>
 </div>
 </div>
 <div class="g-item">
-<img alt="Asamblea Legislativa Costa Rica" src="images/WhatsApp_Image_2026-06-14_at_6.45.43_PM.jpeg?v=2"/>
+<img alt="Asamblea Legislativa Costa Rica" src="images/WhatsApp_Image_2026-06-14_at_6.45.43_PM.jpeg"/>
 <div class="g-caption">
   <div class="g-caption-label">Costa Rica · Identidad</div>
   <div class="g-caption-text">Asamblea Legislativa</div>
 </div>
 </div>
 <div class="g-item">
-<img alt="AgenteIA.cr - Tecnología e IA" src="images/WhatsApp_Image_2026-06-14_at_6.25.51_PM.jpeg?v=2"/>
+<img alt="AgenteIA.cr - Tecnología e IA" src="images/WhatsApp_Image_2026-06-14_at_6.25.51_PM.jpeg"/>
 <div class="g-caption">
   <div class="g-caption-label">Tecnología · IA</div>
   <div class="g-caption-text">AgenteIA.cr</div>
 </div>
 </div>
 <div class="g-item">
-<img alt="El inicio del camino" src="images/WhatsApp_Image_2026-06-14_at_6.51.15_PM.jpeg?v=2"/>
+<img alt="El inicio del camino" src="images/WhatsApp_Image_2026-06-14_at_6.51.15_PM.jpeg"/>
 <div class="g-caption">
   <div class="g-caption-label">Orígenes · Historia</div>
   <div class="g-caption-text">El inicio del camino</div>
 </div>
 </div>
 <div class="g-item">
-<img alt="Visión Costa Rica" src="images/Costa_Rica_tu_mejor_capitulo.png?v=2"/>
+<img alt="Visión Costa Rica" src="images/Costa_Rica_tu_mejor_capitulo.png"/>
 <div class="g-caption">
   <div class="g-caption-label">Visión · Propósito</div>
   <div class="g-caption-text">Costa Rica, tu mejor capítulo</div>
@@ -767,7 +777,7 @@ footer {
 </div>
 </section>
 <!-- VISIÓN -->
-<section>
+<section id="vision">
 <div class="eyebrow">El Costa Rica que queremos</div>
 <h2 class="reveal">Una visión <em>clara</em></h2>
 <div class="goals-grid">
@@ -828,20 +838,20 @@ footer {
 <section id="unete">
 <div class="eyebrow">Sé parte del cambio</div>
 <h2 class="reveal">Únete al <em>movimiento</em></h2>
-<div class="goals-grid">
+<div class="unete-grid">
 <div class="reveal" style="transition-delay:0.1s">
 <div class="contact-head" style="font-size:18px;margin-bottom:2rem;">Costa Rica no va a cambiar sola. Necesita gente que crea, que proponga y que trabaje. Si eso te describe, estamos construyendo algo juntos.</div>
-<div class="goal-item"><span class="goal-idx" style="color:var(--gold);">→</span>Comparte las propuestas con tu comunidad</div>
-<div class="goal-item"><span class="goal-idx" style="color:var(--gold);">→</span>Únete a Incide Costa Rica y fórmate como líder</div>
-<div class="goal-item"><span class="goal-idx" style="color:var(--gold);">→</span>Escríbeme si tienes una idea o quieres colaborar</div>
-<div class="goal-item"><span class="goal-idx" style="color:var(--gold);">→</span>Sígueme en redes y amplifica el mensaje</div>
+<div class="unete-item"><span class="unete-idx">→</span>Comparte las propuestas con tu comunidad</div>
+<div class="unete-item"><span class="unete-idx">→</span>Únete a Incide Costa Rica y fórmate como líder</div>
+<div class="unete-item"><span class="unete-idx">→</span>Escríbeme si tienes una idea o quieres colaborar</div>
+<div class="unete-item"><span class="unete-idx">→</span>Sígueme en redes y amplifica el mensaje</div>
 </div>
 <div class="reveal" style="transition-delay:0.2s">
 <div class="goal-period">El cambio empieza aquí</div>
-<div class="goal-item"><span class="goal-idx">01</span>No esperes a que otros lo hagan</div>
-<div class="goal-item"><span class="goal-idx">02</span>Cada voz cuenta, cada acción importa</div>
-<div class="goal-item"><span class="goal-idx">03</span>La política le pertenece a la gente, no a los partidos</div>
-<div class="goal-item"><span class="goal-idx">04</span>Costa Rica, tu mejor capítulo aún no se ha escrito</div>
+<div class="unete-item"><span class="unete-idx">01</span>No esperes a que otros lo hagan</div>
+<div class="unete-item"><span class="unete-idx">02</span>Cada voz cuenta, cada acción importa</div>
+<div class="unete-item"><span class="unete-idx">03</span>La política le pertenece a la gente, no a los partidos</div>
+<div class="unete-item"><span class="unete-idx">04</span>Costa Rica, tu mejor capítulo aún no se ha escrito</div>
 </div>
 </div>
 </section>
